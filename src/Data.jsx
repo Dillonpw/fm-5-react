@@ -25,28 +25,28 @@ const styleForCategory = (category) => {
                 backgroundColor: 'hsla(0, 100%, 67%, .1)',
                 color: 'hsl(0, 100%, 67%)',
                 fontSize: '12px',
-                paddingLeft: '1rem'
+                paddingLeft: '1rem',
             };
         case 'memory':
             return {
                 backgroundColor: 'hsla(39, 100%, 56%, .1)',
                 color: 'hsla(39, 100%, 56%)',
                 fontSize: '12px',
-                paddingLeft: '1rem'
+                paddingLeft: '1rem',
             };
         case 'verbal':
             return {
                 backgroundColor: 'hsla(166, 100%, 37%, .1)',
                 color: 'hsla(166, 100%, 37%)',
                 fontSize: '12px',
-                paddingLeft: '1rem'
+                paddingLeft: '1rem',
             };
         case 'visual':
             return {
                 backgroundColor: 'hsla(234, 85%, 45%, .1)',
                 color: 'hsla(234, 85%, 45%)',
                 fontSize: '12px',
-                paddingLeft: '1rem'
+                paddingLeft: '1rem',
             };
         default:
             return {};
@@ -78,7 +78,7 @@ const Data = () => {
     ];
 
     const textStyle = { color: 'grey', fontSize: '16px', fontWeight: '700' };
-    const scoreStyle = { color :'black', fontWeight: '700'}
+    const scoreStyle = { color: 'black', fontWeight: '700' };
     return (
         <div className="data">
             <h1 className="summary">Summary</h1>
@@ -97,7 +97,8 @@ const Data = () => {
                         {test.category}
                     </h2>
                     <p style={textStyle}>
-                        <span style={scoreStyle}>{test.score}</span> / 100</p>
+                        <span style={scoreStyle}>{test.score}</span> / 100
+                    </p>
                 </div>
             ))}
 
